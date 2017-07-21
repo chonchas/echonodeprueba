@@ -55,9 +55,6 @@ div.btn, a.btn {
 header, section {
   min-height: 100vh; }
 
-.section {
-  padding: 4em 0 !important; }
-
 @media only screen and (max-width: 991px) {
   :root {
     font-size: 17px; } }
@@ -318,6 +315,11 @@ i {
 
   #revision .col {
     margin-top: -4em !important; } }
+html {
+  zoom: 120%;
+  -moz-transform: scale(120%);
+  -moz-transform-origin: 0 0; }
+
 header {
   background-color: #444444;
   background-image: url("../img/mac.png");
