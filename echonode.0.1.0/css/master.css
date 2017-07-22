@@ -55,15 +55,18 @@ div.btn, a.btn {
 header, section {
   min-height: 100vh; }
 
+.section {
+  padding: 4em 0 !important; }
+
 @media only screen and (max-width: 991px) {
   :root {
-    font-size: 17px; } }
+    font-size: 14px; } }
 @media only screen and (max-width: 601px) {
   .aeh1 {
-    margin-top: -9em !important; } }
+    margin-top: -10em !important; } }
 .aeh1 {
   position: absolute;
-  margin-top: -7em;
+  margin-top: -8em;
   margin-left: -50% !important;
   left: 62.5%;
   z-index: 2;
@@ -85,12 +88,11 @@ header, section {
   padding: 0; }
 
 #slider {
-  height: 110vh;
+  height: 90vh;
   background-color: #2ecc71;
   color: white; }
 
 #slider .container {
-  margin-bottom: 2em;
   width: 100% !important; }
 
 #slider .carousel {
@@ -173,7 +175,7 @@ div.slide-image {
     margin-top: 0em; }
 
   #slider {
-    height: 130vh; } }
+    height: 110vh; } }
 .nav-wrapper {
   background-color: #333333;
   height: 6rem;
@@ -226,7 +228,7 @@ div.slide-image {
   position: fixed;
   width: 100%;
   z-index: 3;
-  margin-top: -2em;
+  margin-top: -5em;
   padding-top: 200px; }
 
 #navMobile a {
@@ -236,7 +238,8 @@ div.slide-image {
 
 #navMobile li {
   height: 100px;
-  padding-top: 1.5em; }
+  padding-top: 1.5em;
+  display: block; }
 
 #navMobile .divider {
   background-color: #2ecc71;
@@ -286,10 +289,9 @@ i {
 #revision {
   background-color: #ffffff;
   background-image: url("../img/CHANGE.png");
-  background-size: 700px;
+  background-size: 50%;
   background-position: 80% 50%;
-  background-repeat: no-repeat;
-  height: 90vh; }
+  background-repeat: no-repeat; }
 
 #revision .divider {
   background-color: #27ae60;
@@ -300,12 +302,12 @@ i {
   color: rgba(0, 0, 0, 0.54); }
 
 #revision .col {
-  margin-top: 8em; }
+  margin-top: 6em; }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 990px) {
   #revision {
     background-size: 500px;
-    background-position: 50% 80%; }
+    background-position: 50% 60%; }
 
   #revision .col {
     margin-top: -2em; } }
@@ -328,8 +330,8 @@ header {
   background-position: 75% 40%; }
 
 img#logo {
-  height: 5em;
-  width: 15em;
+  height: 6.67em;
+  width: 20em;
   margin-bottom: 2em;
   margin-top: 3em; }
 
@@ -372,7 +374,7 @@ header div.btn:hover {
     margin-top: 2em; } }
 @media only screen and (max-width: 990px) {
   header .row {
-    margin-top: -2em; } }
+    margin-top: 4em; } }
 @media only screen and (max-width: 600px) {
   header {
     background-image: none; } }
@@ -444,6 +446,9 @@ header div.btn:hover {
 #contacto {
   background-color: #444444;
   color: white; }
+
+#contacto .l5 h3 {
+  color: #2ecc71; }
 
 #contacto div.divider {
   width: 70%; }
