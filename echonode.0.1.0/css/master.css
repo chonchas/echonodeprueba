@@ -65,10 +65,10 @@ header, section {
     font-size: 12px; } }
 @media only screen and (max-width: 601px) {
   .aeh1 {
-    margin-top: -12em !important; } }
+    margin-top: -50% !important; } }
 .aeh1 {
   position: absolute;
-  margin-top: -6em;
+  margin-top: -8em;
   margin-left: -50% !important;
   left: 62.5%;
   z-index: 2;
@@ -90,7 +90,7 @@ header, section {
   padding: 0; }
 
 #slider {
-  height: 90vh;
+  height: auto;
   background-color: #2ecc71;
   color: white; }
 
