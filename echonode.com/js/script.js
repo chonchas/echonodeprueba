@@ -130,7 +130,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scrollWindow = $(window).scrollTop();
         console.log($("header").height());
-        if(scrollWindow >= 676){
+        if(scrollWindow >= 1100){
             $("#desktop-nav").addClass("nav-fixed");
             
             

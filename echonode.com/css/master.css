@@ -82,7 +82,11 @@ header, section {
 #slider {
   height: auto;
   background-color: #2ecc71;
-  color: white; }
+  color: white;
+  background-image: url("../img/hex217b.png");
+  background-repeat: no-repeat;
+  background-position: -300px 50%;
+  background-size: 500px; }
 
 #slider .container {
   width: 100% !important; }
@@ -312,7 +316,6 @@ html {
 header {
   background-color: #444444;
   background-image: url("../img/mac.png");
-  background-size: 650px;
   background-repeat: no-repeat;
   background-position: 75% 40%;
   height: 100vh; }
@@ -341,13 +344,13 @@ header div.btn:hover {
   background-image: url("../img/hex184.png");
   background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -10% -5%; }
+  background-position: -100px -20%; }
 
 .hex172 {
   background-image: url("../img/hex174.png");
   background-size: 400px;
   background-repeat: no-repeat;
-  background-position: 100% -5%; }
+  background-position: 110% -20%; }
 
 #menuIcon {
   right: 20px;
@@ -356,17 +359,23 @@ header div.btn:hover {
 @media only screen and (max-width: 1200px) {
   header {
     background-size: 300px;
-    background-position: 80% 0%; } }
+    background-position: 80% 0%; }
+
+  .hex172 {
+    background-image: none; }
+
+  .hex184 {
+    background-position: -160px -40%; } }
 @media only screen and (min-width: 900px) and (max-width: 1200px) {
   header h1 {
     margin-top: 2em; } }
 @media only screen and (max-width: 990px) {
-  header .row {
-    margin-top: 4em; } }
+  header {
+    text-align: center;
+    height: 100% !important; } }
 @media only screen and (max-width: 600px) {
   header {
-    background-image: none;
-    min-height: 100vh !important; }
+    background-image: none; }
 
   header .row {
     margin-top: -1em; } }
@@ -455,9 +464,8 @@ header div.btn:hover {
   margin-bottom: 0 !important; }
 
 #mcyImage {
-  background-image: url("../img/maracay.jpg");
+  background-image: url("../img/maracay.png");
   background-repeat: no-repeat;
-  background-size: 1400px;
   height: auto;
   margin-top: -1em; }
 
