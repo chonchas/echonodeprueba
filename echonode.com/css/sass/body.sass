@@ -1,0 +1,83 @@
+@import "var"
+
+*
+    font-family: 'Roboto', sans-serif
+
+/* 1px = 0.75pt & 1pt = 1.33px */
+// Conversiones de tamanos completa
+
+\:root
+    font-size: 14px
+
+body
+    background-color: $black4
+    overflow-y: scroll
+    overflow-x: hidden
+
+
+h1
+    font-size: 2.65em !important
+
+h2
+    font-size: 2.125em !important
+
+h3,
+    font-size: 1.6575em !important
+
+h6
+    font-size: 0.6875em !important
+
+p,.btn
+    font-size: 1.1875em !important
+
+span
+    font-size: 1em !important
+
+h2, .btn
+    font-weight: 500
+
+h1,h3,h6,span,p
+    font-weight: 400
+
+h1,h2,h3
+    font-family: 'Raleway', sans-serif
+
+// Divider Setting
+
+.divider
+    margin: 0 auto
+    width: auto
+    margin-bottom: 3em
+    height: 3px !important
+.divider,div.btn
+    background-color: $green-dark !important
+
+
+div.btn
+    color: white
+// Button Size -- Based on material design
+
+
+
+
+div.btn, a.btn
+    height: 3em
+    line-height: 3em
+
+
+//SECTION
+
+header,section
+    min-height: 600px
+
+.section
+    padding: 4rem 0 !important
+
+
+
+
+// Media queries
+
+@media only screen and (max-width: 991px)
+    \:root
+        font-size: 12px
