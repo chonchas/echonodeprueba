@@ -1,0 +1,71 @@
+@import "var"
+
+footer
+  background-color: $black3
+  width: 100%
+  color: white
+  position: relative
+  bottom: 0
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.26)
+  & .section
+    max-width: 512px
+    padding: 2rem 0 !important
+    z-index: 1
+    margin: 0 auto
+    box-shadow: none
+  & a
+    color: white
+    font-weight: 500
+
+.footer-social
+  margin: 2rem auto
+  width: 50%
+
+.footer-links
+  margin: 2rem auto
+  & .clear
+    transition: .25s
+    &:hover
+      color: $green-light
+  & .divider
+    width: 5%
+
+.copyright
+  color: rgba(255,255,255,.5)
+  font-weight: lighter
+
+a .email-icon
+  position: relative
+  top: 6px
+  left: -6px
+
+
+.social-img
+  height: 4rem
+  width: auto
+
+
+#twitter
+  background-image: url(../img/twitter.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: contain
+
+#youtube
+  background-image: url(../img/youtube.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: contain
+
+#instagram
+  background-image: url(../img/instagram.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: contain
+
+@media only screen and (max-width: 601px)
+  .footer-social
+    width: 75%
+
+  a .email-icon
+    display: none

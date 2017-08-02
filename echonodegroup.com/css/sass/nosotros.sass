@@ -1,0 +1,71 @@
+@import "var"
+
+#nosotros
+    background-color: #EEEEEE
+    padding-top: 2em
+    padding-bottom: 4em
+    
+#nosotros .container
+    width: 100% !important
+    
+
+#nosotros .user
+    color: #95989A
+
+    
+#nosotros h6
+    color: $green-dark
+    
+#nosotros .card
+    padding: 2em
+    display: table
+    width: 75% 
+    margin: 0 auto !important
+    
+#nosotros .col
+    margin-top: 2em
+    
+#nosotros p
+    font-size: .6em
+    
+#nosotros .divider
+    width: 10%
+    margin-bottom: 2em
+    margin-top: 2em
+    
+#nosotros .circle
+    height: 150px
+    width: 150px
+    background-color: $green-dark
+    margin-bottom: 2em
+    
+#perso1
+    background-image: url("../img/perso1.jpg")
+    background-size: 150px
+    background-repeat: no-repeat
+    
+#perso2
+    background-image: url("../img/perso2j.jpg")
+    background-position: 0 -40px
+    background-repeat: no-repeat
+    
+.logo-up
+    position: absolute
+    margin-top: -8em
+    margin-left: 2em
+    height: 80px
+    width: 80px
+
+    
+@media only screen and (max-width: 991px)
+    #nosotros .card
+        width: 80%
+        margin: 0 auto
+        
+@media only screen and (max-width: 1200px)
+    .logo-up
+        margin-left: 35%
+        
+@media only screen and (max-width: 600px)
+    .logo-up
+        margin-left: 20% !important

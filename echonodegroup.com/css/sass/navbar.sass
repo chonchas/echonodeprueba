@@ -1,0 +1,102 @@
+@import 'var'
+.nav-wrapper
+    background-color: $black3
+    height: 6rem
+    line-height: 6rem
+
+
+.nav-fixed
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26)
+    transition: all 500ms linear
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 100
+    height: 6rem
+    margin-top: -1em
+    line-height: 5rem
+
+.nav-normal
+    transition: all .5s linear
+
+.nav-wrapper a
+    width: 250px
+
+
+.nav-wrapper li
+    display: inline-block
+
+
+.nav-wrapper a
+    display: inline-block
+    color: white
+
+.nav-wrapper a li::after
+    content: ''
+    display: block
+    border-top: solid 2px $green-light
+    transition: transform 300ms ease-in-out
+    transform: scaleX(0)
+
+.nav-wrapper a:hover
+    color: $green-light
+    transition: .3s
+
+
+.nav-wrapper a:hover > li::after
+    width: 100%
+    transform: scaleX(1)
+
+
+
+
+// NAVBAR MOBILE
+
+#navMobile
+    background-color: $black
+    display: none
+    height: 200%
+    position: fixed
+    width: 100%
+    z-index: 3
+    margin-top: -5em
+    padding-top: 200px
+
+#navMobile ul
+    margin-top: -4em
+
+#navMobile a
+    color: white
+    font-size: 2em
+    padding-left: 10px
+
+
+#navMobile li
+    height: 100px
+    padding-top: 1.5em
+    display: block
+
+
+#navMobile .divider
+    background-color: $green-light
+    width: 50%
+
+i
+    font-size: 40px !important
+    position: absolute
+    cursor: pointer
+    color: $green-dark
+
+.menu-icons
+    margin-left: -40px
+
+#closeButton
+    top: 2em
+    right: 4px
+
+@media only screen and (min-width: 1206px)
+    .nav-wrapper2,#menuIcon, #closeButton
+        display: none
+@media only screen and (max-width: 1205px)
+    .nav-wrapper
+        display: none 
