@@ -8,8 +8,7 @@
 
 body {
   background-color: #444444;
-  overflow-y: scroll;
-  overflow-x: hidden; }
+  overflow-y: scroll; }
 
 h1 {
   font-size: 2.65em !important; }
@@ -78,6 +77,8 @@ header, section {
     color: white;
     font-family: "Raleway";
     font-size: 2rem !important; }
+    .banner .ae span {
+      font-family: "Roboto"; }
 
 #slider {
   height: auto;
@@ -227,21 +228,23 @@ div.slide-image {
   padding-top: 200px; }
 
 #navMobile ul {
-  margin-top: -4em; }
+  margin-top: -5em; }
 
 #navMobile a {
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   padding-left: 10px; }
 
 #navMobile li {
-  height: 100px;
+  height: 70px;
   padding-top: 1.5em;
   display: block; }
 
 #navMobile .divider {
   background-color: #2ecc71;
-  width: 50%; }
+  width: 50%;
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 i {
   font-size: 40px !important;
@@ -330,8 +333,8 @@ header {
   background-color: #444444;
   background-image: url("../img/macj.jpg");
   background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: 70% 150px;
+  background-size: 600px;
+  background-position: 75% 150px;
   height: 90vh; }
 
 img#logo {
@@ -356,13 +359,11 @@ header div.btn:hover {
 
 .hex184 {
   background-image: url("../img/hex184.png");
-  background-size: 400px;
   background-repeat: no-repeat;
   background-position: -100px -20%; }
 
 .hex172 {
   background-image: url("../img/hex174.png");
-  background-size: 400px;
   background-repeat: no-repeat;
   background-position: 110% -20%; }
 
@@ -396,7 +397,14 @@ header div.btn:hover {
     margin-top: -1em; } }
 @media only screen and (min-width: 1206px) and (max-width: 1600px) {
   header {
-    background-size: 400px; } }
+    background-size: 500px;
+    background-position: 85% 150px; }
+
+  .hex184 {
+    background-size: 350px; }
+
+  .hex172 {
+    background-size: 350px; } }
 #nosotros {
   background-color: #EEEEEE;
   padding-top: 2em;
@@ -499,6 +507,12 @@ header div.btn:hover {
 
 #contacto .col.l5 {
   margin-top: 2em; }
+
+#contacto i {
+  position: relative;
+  top: 0.5rem;
+  font-size: 4rem;
+  color: white; }
 
 @media only screen and (max-width: 991px) {
   #contacto .l5 {

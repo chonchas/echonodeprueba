@@ -67,22 +67,14 @@ $(document).ready(function(){
 		}
 	});
     
-    // SCROLLFIRE
-    
-    var options = [ {selector: '#productos', offset: 0, callback: function(el) { 
-        $('#productos *').addClass('animated slideInUp');}},
-                  {selector: '#revision', offset: 0, callback: function(el) { 
-        $('#revision *').addClass('animated fadeInLeft') }},
-                  {selector: '#nosotros', offset: 0, callback: function(el) { 
-        $('#nosotros *').addClass('animated zoomIn')}}
-                  ];
+
     
   
     
    
                    
     
-    Materialize.scrollFire(options);
+   
     
     // REDIRECTION SCRIPT
     
@@ -146,16 +138,43 @@ $(document).ready(function(){
         $(".logo-up").html('<img src="img/en-isotipo-azul.png"></img>');
         $("#slider").css("background-position", "1500px 50%");
         $(":root").css("font-size","14px");
-        $("header").css("height", "100vh");
+        $("header").css({"height":"100vh", "background-position" : "75% 180px","background-size" : "600px"});
     }
     else{
-        $("body").niceScroll({
-        cursorcolor:"#2ECC71",
-        cursorwidth:"8px",
-        background: "#444444",
-        cursorborder: "1px solid #2ECC71",
-        cursorborderradius: 5
+        if (screen.width > 990) {
+            $("body").niceScroll({
+            cursorcolor:"#2ECC71",
+            cursorwidth:"8px",
+            background: "#444444",
+            cursorborder: "1px solid #2ECC71",
+            cursorborderradius: 5
     });
+        }
+      
     }
+
+    // ELIMINATE ALL ANIMATIONS IN DEVICES
+
+    if(screen.width < 990){
+        $("#nosotros .card").removeClass("hoverable");
+        $("")
+    }
+    else{
+
+    // SCROLLFIRE
+    
+    var options = [ {selector: '#productos', offset: 0, callback: function(el) { 
+        $('#productos *').addClass('animated slideInUp');}},
+                  {selector: '#revision', offset: 0, callback: function(el) { 
+        $('#revision *').addClass('animated fadeInLeft') }},
+                  {selector: '#nosotros', offset: 0, callback: function(el) { 
+        $('#nosotros *').addClass('animated zoomIn')}}
+                  ];
+
+         Materialize.scrollFire(options);
+    }
+
+    console.log(screen.height);
+
     
 });

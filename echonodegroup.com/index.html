@@ -129,7 +129,7 @@
                             <div class="section">
                                 <div class="row">
                                     <div class="col m12 xl4">
-                                        <img class="hvr-grow" src="img/en-imagotipo-azul-modelo.png" alt="" id="logo" style="z-index: 3">
+                                        <img src="img/en-imagotipo-azul-modelo.png" alt="" id="logo">
                                         <h1 class="white-text">Crea tu pagina web profesional totalmente personalizada</h1>
                                         <p class="flow-text">
                                             Hazte notar en en internet con un sitio web de calidad diseñado por expertos en el área
@@ -234,7 +234,7 @@
 
 			<div class="banner valign-wrapper">
 				<div class="ae-wrapper">
-					<span class="ae center-align">"En tiempos de crisis la <span style="font-family:'Roboto';">imaginación</span> se vuelve más importante que el <span style="font-family:'Roboto';">conocimiento</span>"</span>
+					<span class="ae center-align">"En tiempos de crisis la <span>imaginación</span> se vuelve más importante que el <span>conocimiento</span>"</span>
 				</div>
 			</div>
 
@@ -379,7 +379,7 @@
                 <div class="section">
                     <div class="row">
                         <div class="col l6 hide-on-med-and-down" id="mcyImage">
-                            <h3 class="center-align"><h3 class="center-align"><i class="material-icons" style="position: relative;top:.5rem; font-size: 4rem; color:white;">location_on</i>Maracay - <b>VEN</b></h3>
+                            <h3 class="center-align"><h3 class="center-align"><i class="material-icons">location_on</i>Maracay - <b>VEN</b></h3>
                         </div>
                         <div class="col l5 s12  offset-l1 left-align">
                                 <h2>Contactanos</h2>
@@ -453,9 +453,21 @@
 
 
 		<!--Import jQuery before materialize.js-->
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "js/script.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
 		<script src="js/jquery-3.2.0.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
-		<script src="js/script.js"></script>
+		<script async src="js/script.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 			  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
 			  crossorigin="anonymous"></script>
